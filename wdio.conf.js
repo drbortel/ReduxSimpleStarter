@@ -6,8 +6,6 @@ exports.config = {
     /**
      * server configurations
      */
-    host: 'localhost',
-    port: 8080,
 
     /**
      * specify test files
@@ -21,10 +19,12 @@ exports.config = {
     /**
      * capabilities
      */
+     maxInstances: 1,
     capabilities: [{
         browserName: 'chrome',
         version: 'latest',
-        platform: 'Windows 7'
+        platform: 'Windows 7',
+        avoidProxy: true
     }],
 
     /**
@@ -33,7 +33,7 @@ exports.config = {
     logLevel: 'silent',
     coloredLogs: true,
     screenshotPath: 'shots',
-    //baseUrl: 'http://webdriver.io',
+    baseUrl: 'http://localhost:8080',
     waitforTimeout: 10000,
     framework: 'mocha',
 
