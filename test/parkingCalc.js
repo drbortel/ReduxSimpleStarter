@@ -1,5 +1,6 @@
-'use strict'
-const assert = require('assert')
+'use strict';
+const assert = require('assert');
+console.log('start test');
 
 module.exports = () => {
 
@@ -13,4 +14,4 @@ module.exports = () => {
     })
   })
 
-}
+};
